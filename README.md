@@ -1,40 +1,16 @@
 
-# Welcome to your CDK Python project!
+# Welcome to a Poetry-Managed CDK Python project!
 
-This is a blank project for CDK development with Python.
+This is a blank example project for showcasing CDK development with Python & Poetry.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+The `cdk.json` file tells the CDK Toolkit to execute your app using poetry.
 
-This project is set up like a standard Python project.  The initialization
-process also creates a virtualenv within this project, stored under the `.venv`
-directory.  To create the virtualenv it assumes that there is a `python3`
-(or `python` for Windows) executable in your path with access to the `venv`
-package. If for any reason the automatic creation of the virtualenv fails,
-you can create the virtualenv manually.
+This project is set up like a standard Poetry project.
 
-To manually create a virtualenv on MacOS and Linux:
+You can install the required dependencies with
 
 ```
-$ python3 -m venv .venv
-```
-
-After the init process completes and the virtualenv is created, you can use the following
-step to activate your virtualenv.
-
-```
-$ source .venv/bin/activate
-```
-
-If you are a Windows platform, you would activate the virtualenv like this:
-
-```
-% .venv\Scripts\activate.bat
-```
-
-Once the virtualenv is activated, you can install the required dependencies.
-
-```
-$ pip install -r requirements.txt
+$ poetry install
 ```
 
 At this point you can now synthesize the CloudFormation template for this code.
@@ -43,9 +19,8 @@ At this point you can now synthesize the CloudFormation template for this code.
 $ cdk synth
 ```
 
-To add additional dependencies, for example other CDK libraries, just add
-them to your `setup.py` file and rerun the `pip install -r requirements.txt`
-command.
+To add additional dependencies, for example other CDK libraries, just run 
+`poetry add [dependency-name]` like for any other Poetry project.
 
 ## Useful commands
 
