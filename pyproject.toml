@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "cdk-with-poetry"
+version = "0.0.0"
+description = ""
+authors = ["Tshimanga <bk.tshimanga@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aws-cdk-lib = "^2.117.0"
+constructs = "^10.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
